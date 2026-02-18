@@ -1,0 +1,214 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-implement-a-responsive-single-page-landing-site-for-a1-mart-with-a-sticky-top-navigation-bar-that-uses-in-page-anchor-links-to-sections-home-about-products-contact",
+      "featureTitle": "Implement a responsive single-page landing site for “A1 Mart” with a sticky top navigation bar that uses in-page anchor links to sections: Home, About, Products, Contact.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a1-mart-branding-and-styling-across-the-page-using-a-professional-dark-green-and-cream-palette-primary-1a4d2e-accent-background-f5efe0-with-bold-typography-rounded-cards-buttons-and-consistent-spacing",
+      "featureTitle": "Apply A1 Mart branding and styling across the page using a professional dark green and cream palette (primary #1A4D2E, accent/background #F5EFE0), with bold typography, rounded cards/buttons, and consistent spacing.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-home-section-hero-with-headline-supporting-copy-and-two-call-to-action-buttons-linking-to-products-and-contact-include-a-secondary-highlighted-panel-emphasizing-trusted-by-busy-professionals-and-for-business-beyond",
+      "featureTitle": "Build the Home section hero with headline, supporting copy, and two call-to-action buttons linking to Products and Contact; include a secondary highlighted panel emphasizing “Trusted by busy professionals” and “for business & beyond”.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-about-section-our-story-mission-with-the-provided-narrative-text-founded-in-2020-sustainability-fairness-mission-statement-and-an-adjacent-trust-highlight-card-100-trusted",
+      "featureTitle": "Build the About section (“Our story & mission”) with the provided narrative text (founded in 2020, sustainability/fairness, mission statement) and an adjacent trust highlight card (“100% trusted”).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-the-products-section-showing-exactly-four-category-cards-bags-toys-electronics-clothing-each-card-must-include-an-icon-a-short-subtitle-and-a-starting-price-line-from-19-9-29-15-respectively",
+      "featureTitle": "Implement the Products section showing exactly four category cards: Bags, Toys, Electronics, Clothing; each card must include an icon, a short subtitle, and a starting price line (“from $19/$9/$29/$15” respectively).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-the-products-section-quality-banner-text-100-genuine-products-fast-delivery-easy-returns",
+      "featureTitle": "Add the Products section quality banner text: “100% genuine products — fast delivery — easy returns”.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-the-contact-section-with-a-functional-html-form-that-submits-to-formsubmit-using-the-exact-action-url-and-hidden-fields-from-the-provided-html-including-destination-email-and-redirect-url",
+      "featureTitle": "Implement the Contact section with a functional HTML form that submits to FormSubmit using the exact action URL and hidden fields from the provided HTML, including destination email and redirect URL.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-social-links-row-in-the-contact-section-that-includes-an-instagram-button-linking-to-the-exact-provided-url-include-optional-secondary-placeholder-buttons-for-x-twitter-and-facebook-that-do-not-break-navigation",
+      "featureTitle": "Add a social links row in the Contact section that includes an Instagram button linking to the exact provided URL; include optional secondary placeholder buttons for X/Twitter and Facebook that do not break navigation.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-the-extra-informational-strip-section-faq-free-shipping-visit-showroom-as-a-simple-responsive-three-item-highlight-row",
+      "featureTitle": "Add the extra informational strip section (FAQ / free shipping / visit showroom) as a simple responsive three-item highlight row.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-the-footer-with-the-provided-2025-copyright-branding-line-a-palette-note-mentioning-dark-green-1a4d2e-and-cream-f5efe0-and-a-note-that-a-logo-will-be-provided-later-using-a-placeholder-for-now",
+      "featureTitle": "Implement the footer with the provided 2025 copyright/branding line, a palette note mentioning dark green (#1A4D2E) and cream (#F5EFE0), and a note that a logo will be provided later (using a placeholder for now).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-coherent-visual-theme-consistent-with-a-premium-dark-green-cream-retail-brand-set-global-typography-scale-button-styles-card-radii-shadows-and-section-background-alternation-and-apply-it-consistently-across-all-sections-without-introducing-new-product-features",
+      "featureTitle": "Create a coherent visual theme consistent with a premium “dark green + cream” retail brand: set global typography scale, button styles, card radii/shadows, and section background alternation, and apply it consistently across all sections without introducing new product features.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no methods or logic.",
+  "feature_evidence.json": "Metadata file listing implemented features, related frontend files, components, test IDs, and confidence levels.",
+  "frontend-file-summaries.txt": "Prewritten summaries describing App.tsx, index.css, and tailwind.config.js contents for build reference.",
+  "frontend/index.css": "Base Tailwind setup defining OKLCH color variables, dark mode overrides, and global styles.",
+  "frontend/index.html": "HTML entry point with a root div and script loading the React app.",
+  "frontend/src/App.tsx": "Full A1 Mart landing page with sticky nav, hero, about section, products, contact form, social links, and footer.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and refreshes a backend actor based on Internet Identity authentication state.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity authentication context, handling login, stored identity loading, and state management.",
+  "frontend/src/index.css": "Brand-focused styling with dark green and cream theme plus custom components for navigation, buttons, cards, and layout.",
+  "frontend/src/main.tsx": "React entry rendering App with Internet Identity and React Query providers.",
+  "frontend/tailwind.config.js": "Configures Tailwind with dark mode, custom OKLCH color system, typography/animation plugins, and extended theme options for layout and components.",
+  "project_state.json": "Defines project metadata and feature set for building a responsive single‑page marketing site for A1 Mart with sections, branding, and form requirements."
+}

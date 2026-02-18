@@ -1,0 +1,252 @@
+{
+  "kind": "build_request",
+  "title": "Create A1 Mart single-page marketing site",
+  "projectName": "A1 Mart",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Implement a responsive single-page landing site for “A1 Mart” with a sticky top navigation bar that uses in-page anchor links to sections: Home, About, Products, Contact.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "<a href=\"#home\">Home</a>\n      <a href=\"#about\">About</a>\n      <a href=\"#products\">Products</a>\n      <a href=\"#contact\">Contact</a>",
+          "/* ----- navigation (bold & sticky) ----- */\n    nav {\n      ...\n      position: sticky;\n      top: 0;\n      z-index: 100;"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A sticky navigation bar is visible at the top of the page and remains fixed during scroll.",
+        "Clicking each nav item scrolls to the correct section (Home, About, Products, Contact).",
+        "Layout adapts to small screens (navigation stacks or wraps cleanly at ~700px width)."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Apply A1 Mart branding and styling across the page using a professional dark green and cream palette (primary #1A4D2E, accent/background #F5EFE0), with bold typography, rounded cards/buttons, and consistent spacing.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          ":root {\n      --primary: #1A4D2E;      /* dark green */\n      --accent: #F5EFE0;       /* cream */\n      --white: #ffffff;\n      --gray-light: #f0f0f0;\n      --shadow: 0 8px 20px rgba(0, 40, 0, 0.08);\n    }",
+          "body {\n      background-color: #F5EFE0;\n      color: #1A4D2E;"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Primary UI elements (nav, buttons, headings, accents) use #1A4D2E and backgrounds use #F5EFE0 and/or white in a consistent system.",
+        "Buttons have clear hover states and rounded styling consistent with the provided HTML concept.",
+        "All sections use consistent max-width container spacing and look cohesive on desktop and mobile."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Build the Home section hero with headline, supporting copy, and two call-to-action buttons linking to Products and Contact; include a secondary highlighted panel emphasizing “Trusted by busy professionals” and “for business & beyond”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "<h1 ...>Shop smart.<br><span ...>Thousands of items.</span></h1>",
+          "<a href=\"#products\" class=\"btn btn-outline\" ...>... Explore products</a>\n            <a href=\"#contact\" class=\"btn\">... Contact us</a>",
+          "<p><strong>Trusted by busy professionals</strong> – we bring value, variety and reliability.</p>\n            <div class=\"target-tag\" ...>... for business & beyond</div>"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Home section renders the headline “Shop smart. Thousands of items.” and the description about bags, toys, electronics, clothing.",
+        "CTA buttons scroll to Products and Contact sections respectively.",
+        "A secondary panel/badge communicates “Trusted by busy professionals” and “for business & beyond”."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Build the About section (“Our story & mission”) with the provided narrative text (founded in 2020, sustainability/fairness, mission statement) and an adjacent trust highlight card (“100% trusted”).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "<h2>Our story & mission</h2>",
+          "Founded in 2020, A1 Mart started as a small family venture...",
+          "<h3 style=\"margin: 1rem 0;\">100% trusted</h3>"
+        ]
+      },
+      "acceptanceCriteria": [
+        "About section includes heading “Our story & mission” and the three content paragraphs from the provided HTML concept (or equivalent wording in English preserving meaning).",
+        "A secondary card/aside is shown with the text “100% trusted” and supporting line.",
+        "Section uses a white background (or equivalent contrast) and remains responsive."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Implement the Products section showing exactly four category cards: Bags, Toys, Electronics, Clothing; each card must include an icon, a short subtitle, and a starting price line (“from $19/$9/$29/$15” respectively).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "<!-- SERVICES / PRODUCTS section (exactly 4 categories as mentioned) -->",
+          "Bags · Toys · Electronics · Clothing",
+          "<h3>Bags</h3> ... <span ...>from $19</span>\n          ...\n          <h3>Toys</h3> ... <span ...>from $9</span>\n          ...\n          <h3>Electronics</h3> ... <span ...>from $29</span>\n          ...\n          <h3>Clothing</h3> ... <span ...>from $15</span>"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Products section renders exactly four cards (no more, no less) for Bags, Toys, Electronics, Clothing.",
+        "Each card shows an icon, subtitle text, and the specified starting price.",
+        "Cards display in a responsive grid (1 column on small screens; multiple columns on larger screens) with a subtle hover lift effect."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Add the Products section quality banner text: “100% genuine products — fast delivery — easy returns”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "100% genuine products — fast delivery — easy returns"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A banner/strip below the product grid displays the exact text “100% genuine products — fast delivery — easy returns”.",
+        "Banner uses brand colors and remains readable on mobile."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Implement the Contact section with a functional HTML form that submits to FormSubmit using the exact action URL and hidden fields from the provided HTML, including destination email and redirect URL.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "<form action=\"https://formsubmit.co/merealam0786@gmail.com\" method=\"POST\" target=\"_blank\">",
+          "<input type=\"hidden\" name=\"_subject\" value=\"New message from A1 Mart website\">",
+          "<input type=\"hidden\" name=\"_captcha\" value=\"false\">",
+          "<input type=\"hidden\" name=\"_next\" value=\"https://a1mart-demo.vercel.app/thanks.html\">",
+          "messages go to merealam0786@gmail.com"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The Contact form includes fields: name, email, message, all required.",
+        "Form submission posts to https://formsubmit.co/merealam0786@gmail.com via POST and includes the hidden fields _subject, _captcha, and _next with the exact values provided.",
+        "A note below the form states that messages go to merealam0786@gmail.com (in English)."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Add a social links row in the Contact section that includes an Instagram button linking to the exact provided URL; include optional secondary placeholder buttons for X/Twitter and Facebook that do not break navigation.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "<a href=\"https://www.instagram.com/visionxgaming3?igsh=MWFwYjQ2djhzd2UzZQ==\" class=\"social-icon\" target=\"_blank\">",
+          "<!-- Additional social presence (optional but friendly) -->"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Instagram icon/button opens https://www.instagram.com/visionxgaming3?igsh=MWFwYjQ2djhzd2UzZQ== in a new tab.",
+        "If X/Twitter and Facebook buttons are present, they use safe placeholder href values (e.g., “#”) and do not cause errors.",
+        "Social buttons have consistent circular styling and hover states aligned with the brand palette."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Add the extra informational strip section (FAQ / free shipping / visit showroom) as a simple responsive three-item highlight row.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "<strong>FAQ</strong> — fast answers",
+          "<strong>free shipping</strong> over $50",
+          "<strong>visit our showroom</strong> (by appt)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A section below Contact (or near the bottom) displays three highlights: “FAQ — fast answers”, “free shipping over $50”, and “visit our showroom (by appt)”.",
+        "The highlight row wraps cleanly on small screens and maintains contrast."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Implement the footer with the provided 2025 copyright/branding line, a palette note mentioning dark green (#1A4D2E) and cream (#F5EFE0), and a note that a logo will be provided later (using a placeholder for now).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "© 2025 A1 Mart – professional, attractive & trusted online store. Built for busy professionals.",
+          "Dark green (#1A4D2E) & cream (#F5EFE0) – colors of reliability.",
+          "Logo will be provided – placeholder \"A1\" used."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer displays the 2025 branding statement for A1 Mart.",
+        "Footer includes the palette note referencing #1A4D2E and #F5EFE0.",
+        "Footer includes an English note indicating a logo will be provided later and a placeholder is used for now."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Create a coherent visual theme consistent with a premium “dark green + cream” retail brand: set global typography scale, button styles, card radii/shadows, and section background alternation, and apply it consistently across all sections without introducing new product features.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "professional, bold color palette",
+          "border-radius: 24px",
+          "border-radius: 40px",
+          "box-shadow: var(--shadow)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All components (nav, hero, cards, form, footer) share consistent radius/shadow/typography rules.",
+        "The page looks intentional and “premium retail” rather than default template styling.",
+        "No additional functional features beyond the described sections are introduced."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
+    "Do not implement third-party authentication beyond Internet Identity (not required for this marketing site).",
+    "Backend must remain single-actor Motoko if any backend code is added; however, this build should not require backend changes.",
+    "Preserve the exact FormSubmit endpoint (https://formsubmit.co/merealam0786@gmail.com) and the exact Instagram URL provided by the user."
+  ],
+  "nonGoals": [
+    "Implementing a full e-commerce system (catalog search, cart, checkout, payments, inventory).",
+    "Persisting products or messages in the Motoko backend (contact form submits via FormSubmit).",
+    "Creating additional pages/routes beyond the single-page section layout (except what is necessary for the template to run).",
+    "Integrating external databases or third-party APIs beyond the provided FormSubmit form post."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [
+      "Use English for all user-facing text in the application."
+    ],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

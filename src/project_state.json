@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Build a professional, responsive single-page marketing website for \"A1 Mart\" (multi‑product store) with sections Home, About, Products (4 categories), and Contact (email form + social links) using a dark green/cream palette.",
+  "architectural_notes": [
+    "Static HTML/CSS single-page site using Font Awesome 6 CDN for icons.",
+    "Contact form posts to FormSubmit endpoint and uses hidden fields for subject/captcha/next redirect."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-implement-a-responsive-single-page-landing-site-for-a1-mart-with-a-sticky-top-navigation-bar-that-uses-in-page-anchor-links-to-sections-home-about-products-contact",
+      "title": "Implement a responsive single-page landing site for “A1 Mart” with a sticky top navigation bar that uses in-page anchor links to sections: Home, About, Products, Contact.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a1-mart-branding-and-styling-across-the-page-using-a-professional-dark-green-and-cream-palette-primary-1a4d2e-accent-background-f5efe0-with-bold-typography-rounded-cards-buttons-and-consistent-spacing",
+      "title": "Apply A1 Mart branding and styling across the page using a professional dark green and cream palette (primary #1A4D2E, accent/background #F5EFE0), with bold typography, rounded cards/buttons, and consistent spacing.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-home-section-hero-with-headline-supporting-copy-and-two-call-to-action-buttons-linking-to-products-and-contact-include-a-secondary-highlighted-panel-emphasizing-trusted-by-busy-professionals-and-for-business-beyond",
+      "title": "Build the Home section hero with headline, supporting copy, and two call-to-action buttons linking to Products and Contact; include a secondary highlighted panel emphasizing “Trusted by busy professionals” and “for business & beyond”.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-about-section-our-story-mission-with-the-provided-narrative-text-founded-in-2020-sustainability-fairness-mission-statement-and-an-adjacent-trust-highlight-card-100-trusted",
+      "title": "Build the About section (“Our story & mission”) with the provided narrative text (founded in 2020, sustainability/fairness, mission statement) and an adjacent trust highlight card (“100% trusted”).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-products-section-showing-exactly-four-category-cards-bags-toys-electronics-clothing-each-card-must-include-an-icon-a-short-subtitle-and-a-starting-price-line-from-19-9-29-15-respectively",
+      "title": "Implement the Products section showing exactly four category cards: Bags, Toys, Electronics, Clothing; each card must include an icon, a short subtitle, and a starting price line (“from $19/$9/$29/$15” respectively).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-products-section-quality-banner-text-100-genuine-products-fast-delivery-easy-returns",
+      "title": "Add the Products section quality banner text: “100% genuine products — fast delivery — easy returns”.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-contact-section-with-a-functional-html-form-that-submits-to-formsubmit-using-the-exact-action-url-and-hidden-fields-from-the-provided-html-including-destination-email-and-redirect-url",
+      "title": "Implement the Contact section with a functional HTML form that submits to FormSubmit using the exact action URL and hidden fields from the provided HTML, including destination email and redirect URL.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-social-links-row-in-the-contact-section-that-includes-an-instagram-button-linking-to-the-exact-provided-url-include-optional-secondary-placeholder-buttons-for-x-twitter-and-facebook-that-do-not-break-navigation",
+      "title": "Add a social links row in the Contact section that includes an Instagram button linking to the exact provided URL; include optional secondary placeholder buttons for X/Twitter and Facebook that do not break navigation.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-extra-informational-strip-section-faq-free-shipping-visit-showroom-as-a-simple-responsive-three-item-highlight-row",
+      "title": "Add the extra informational strip section (FAQ / free shipping / visit showroom) as a simple responsive three-item highlight row.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-footer-with-the-provided-2025-copyright-branding-line-a-palette-note-mentioning-dark-green-1a4d2e-and-cream-f5efe0-and-a-note-that-a-logo-will-be-provided-later-using-a-placeholder-for-now",
+      "title": "Implement the footer with the provided 2025 copyright/branding line, a palette note mentioning dark green (#1A4D2E) and cream (#F5EFE0), and a note that a logo will be provided later (using a placeholder for now).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-coherent-visual-theme-consistent-with-a-premium-dark-green-cream-retail-brand-set-global-typography-scale-button-styles-card-radii-shadows-and-section-background-alternation-and-apply-it-consistently-across-all-sections-without-introducing-new-product-features",
+      "title": "Create a coherent visual theme consistent with a premium “dark green + cream” retail brand: set global typography scale, button styles, card radii/shadows, and section background alternation, and apply it consistently across all sections without introducing new product features.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create A1 Mart single-page layout with sticky navigation and anchor links (Home, About, Products, Contact)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Implement Products section with 4 category cards (Bags, Toys, Electronics, Clothing) including icons and starting prices",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add Contact section with working form submission via FormSubmit (to merealam0786@gmail.com) and success redirect",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add social links row including Instagram link to visionxgaming3 (plus optional X/Twitter and Facebook placeholders)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Apply A1 Mart branding: dark green (#1A4D2E) + cream (#F5EFE0) color palette, bold professional styling, responsive behavior",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Include logo placeholder \"A1\" with note that a logo file will be provided later",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Add footer with 2025 copyright/branding text and palette note",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "A1 Mart",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

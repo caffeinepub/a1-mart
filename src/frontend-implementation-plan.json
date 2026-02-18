@@ -1,0 +1,236 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "A1 Mart single-page marketing site (SPA landing)",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create a responsive single-page layout with a sticky top nav using in-page anchors for Home, About, Products, Contact.",
+      "acceptanceCriteria": [
+        "A sticky navigation bar is visible at the top of the page and remains fixed during scroll.",
+        "Clicking each nav item scrolls to the correct section (Home, About, Products, Contact).",
+        "Layout adapts to small screens (navigation stacks or wraps cleanly at ~700px width)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Implement the single-page layout with a sticky top navigation bar linking via in-page anchors to sections with ids: home, about, products, contact."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Add global styles that support sticky nav behavior, responsive wrapping/stacking of nav links around ~700px, and smooth-scrolling for anchor navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Apply A1 Mart brand styling (dark green + cream), bold typography, rounded UI, and consistent spacing across the page.",
+      "acceptanceCriteria": [
+        "Primary UI elements (nav, buttons, headings, accents) use #1A4D2E and backgrounds use #F5EFE0 and/or white in a consistent system.",
+        "Buttons have clear hover states and rounded styling consistent with the provided HTML concept.",
+        "All sections use consistent max-width container spacing and look cohesive on desktop and mobile."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Define brand CSS variables and global defaults (palette using #1A4D2E and #F5EFE0, typography scale, spacing rhythm, button/card rounding and hover states) and apply base styling for the landing page."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Apply the global brand styles via consistent semantic structure and classNames (containers, section spacing, buttons, cards) across all sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Build the Home hero section with headline, supporting copy, two CTAs (Products/Contact), and a secondary highlight panel/badge.",
+      "acceptanceCriteria": [
+        "Home section renders the headline “Shop smart. Thousands of items.” and the description about bags, toys, electronics, clothing.",
+        "CTA buttons scroll to Products and Contact sections respectively.",
+        "A secondary panel/badge communicates “Trusted by busy professionals” and “for business & beyond”."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Implement the Home section (id=\"home\") hero content including the required headline text, supporting description, two CTA anchor buttons linking to #products and #contact, plus a secondary highlighted panel with “Trusted by busy professionals” and “for business & beyond”."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Build the About section with the provided story/mission narrative and an adjacent “100% trusted” trust highlight card.",
+      "acceptanceCriteria": [
+        "About section includes heading “Our story & mission” and the three content paragraphs from the provided HTML concept (or equivalent wording in English preserving meaning).",
+        "A secondary card/aside is shown with the text “100% trusted” and supporting line.",
+        "Section uses a white background (or equivalent contrast) and remains responsive."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Implement the About section (id=\"about\") with the specified heading and narrative (founded in 2020, sustainability/fairness, mission statement) plus an adjacent responsive trust highlight card containing “100% trusted” and a supporting line."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add section background alternation rules (including a white/contrast section style) and responsive layout styling for the About content + trust card."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Implement the Products section with exactly four responsive category cards (Bags, Toys, Electronics, Clothing) including icon, subtitle, and specified starting prices.",
+      "acceptanceCriteria": [
+        "Products section renders exactly four cards (no more, no less) for Bags, Toys, Electronics, Clothing.",
+        "Each card shows an icon, subtitle text, and the specified starting price.",
+        "Cards display in a responsive grid (1 column on small screens; multiple columns on larger screens) with a subtle hover lift effect."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Implement the Products section (id=\"products\") with exactly four category cards (Bags, Toys, Electronics, Clothing), each including an icon, a short subtitle, and the exact starting price lines (from $19/$9/$29/$15)."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add reusable card styling (rounded corners, shadow, subtle hover lift), and a responsive grid layout that collapses to 1 column on small screens."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Add the Products quality banner strip text under the product grid.",
+      "acceptanceCriteria": [
+        "A banner/strip below the product grid displays the exact text “100% genuine products — fast delivery — easy returns”.",
+        "Banner uses brand colors and remains readable on mobile."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add a brand-styled banner/strip below the products grid displaying the exact text “100% genuine products — fast delivery — easy returns”."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Style the products quality banner to use the brand palette and remain readable with responsive spacing/typography."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Implement the Contact section with a functional FormSubmit HTML form using the exact action URL and hidden fields, plus required inputs and an email note.",
+      "acceptanceCriteria": [
+        "The Contact form includes fields: name, email, message, all required.",
+        "Form submission posts to https://formsubmit.co/merealam0786@gmail.com via POST and includes the hidden fields _subject, _captcha, and _next with the exact values provided.",
+        "A note below the form states that messages go to merealam0786@gmail.com (in English)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Implement the Contact section (id=\"contact\") with a working HTML form that submits via POST to https://formsubmit.co/merealam0786@gmail.com (target=\"_blank\"), includes required fields (name, email, message), includes hidden fields _subject=\"New message from A1 Mart website\", _captcha=\"false\", _next=\"https://a1mart-demo.vercel.app/thanks.html\", and displays an English note that messages go to merealam0786@gmail.com."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add consistent form styling (inputs, textarea, focus states, spacing, and submit button styles) aligned with the brand palette and rounded UI system."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Add social links row in Contact with an Instagram button to the exact URL and optional safe placeholder buttons for X/Twitter and Facebook.",
+      "acceptanceCriteria": [
+        "Instagram icon/button opens https://www.instagram.com/visionxgaming3?igsh=MWFwYjQ2djhzd2UzZQ== in a new tab.",
+        "If X/Twitter and Facebook buttons are present, they use safe placeholder href values (e.g., “#”) and do not cause errors.",
+        "Social buttons have consistent circular styling and hover states aligned with the brand palette."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add a social links row within the Contact section including an Instagram button linking to https://www.instagram.com/visionxgaming3?igsh=MWFwYjQ2djhzd2UzZQ== (open in new tab) and optional X/Twitter + Facebook circular buttons using safe placeholder href values that do not break navigation."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Style social buttons as circular brand-aligned icons with consistent hover/focus states and spacing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Add the bottom informational strip (FAQ / free shipping / visit showroom) as a responsive three-item highlight row.",
+      "acceptanceCriteria": [
+        "A section below Contact (or near the bottom) displays three highlights: “FAQ — fast answers”, “free shipping over $50”, and “visit our showroom (by appt)”.",
+        "The highlight row wraps cleanly on small screens and maintains contrast."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add a responsive three-item highlight row section near the bottom containing the exact three highlights: “FAQ — fast answers”, “free shipping over $50”, and “visit our showroom (by appt)”."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Style the highlight row for contrast and responsive wrapping (grid/flex wrap), maintaining brand spacing and typography."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Implement footer with the specified 2025 branding line, palette note, and placeholder-logo note.",
+      "acceptanceCriteria": [
+        "Footer displays the 2025 branding statement for A1 Mart.",
+        "Footer includes the palette note referencing #1A4D2E and #F5EFE0.",
+        "Footer includes an English note indicating a logo will be provided later and a placeholder is used for now."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add the footer containing the exact 2025 branding statement, the palette note referencing dark green (#1A4D2E) and cream (#F5EFE0), and an English note that a logo will be provided later with a placeholder “A1” used for now."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Style the footer to match the premium brand theme (background/contrast, spacing, typography) and remain readable on mobile."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Establish and consistently apply a premium dark green + cream theme with shared typography, buttons, card styles, and alternating section backgrounds (no extra features).",
+      "acceptanceCriteria": [
+        "All components (nav, hero, cards, form, footer) share consistent radius/shadow/typography rules.",
+        "The page looks intentional and “premium retail” rather than default template styling.",
+        "No additional functional features beyond the described sections are introduced."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define the site-wide design system: typography scale, shared button styles (including hover/focus), shared card radii/shadows, and section background alternation using the brand palette, ensuring consistency across all sections."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Tune theme tokens used by Tailwind (e.g., container spacing defaults and radius token usage) to support consistent premium styling across the landing page without introducing new features."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Ensure all implemented sections consistently use the shared layout and component styling patterns (containers, spacing, buttons, cards, and alternating section backgrounds) and avoid adding any functionality beyond the requested marketing sections."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "frontend/src/App.tsx": "Single-page marketing website for A1 Mart with sticky navigation, hero section, about section, products grid (4 categories), contact form with FormSubmit integration, social links, and footer with attribution.",
+  "frontend/src/index.css": "Complete styling system for A1 Mart using dark green (#1A4D2E) and cream (#F5EFE0) brand colors with OKLCH color tokens, custom component classes for navigation, buttons, cards, forms, and responsive layouts.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with Inter font family and maintaining the existing OKLCH color system and animation utilities."
+}
